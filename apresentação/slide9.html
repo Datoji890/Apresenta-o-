@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Obrigado!</title>
+
+<link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700;800;900&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+font-family:'Montserrat',sans-serif;
+background:#fff;
+}
+
+.slide-container{
+min-height:100vh;
+display:flex;
+flex-direction:column;
+position:relative;
+overflow:hidden;
+}
+
+/* elementos decorativos */
+
+.geo-element-1{
+position:absolute;
+width:280px;
+height:280px;
+background:#2791f5;
+border-radius:50%;
+top:-100px;
+right:-60px;
+opacity:.12;
+}
+
+.geo-element-2{
+position:absolute;
+width:150px;
+height:150px;
+background:#2791f5;
+border-radius:50%;
+bottom:-40px;
+left:-40px;
+opacity:.1;
+}
+
+.geo-element-3{
+position:absolute;
+width:110px;
+height:110px;
+border:3px solid #2791f5;
+border-radius:50%;
+top:160px;
+left:60px;
+opacity:.15;
+}
+
+.geo-element-4{
+position:absolute;
+width:90px;
+height:90px;
+border:2px solid #2791f5;
+border-radius:50%;
+bottom:160px;
+right:80px;
+opacity:.12;
+}
+
+.geo-element-5{
+position:absolute;
+width:60px;
+height:60px;
+background:#2791f5;
+border-radius:50%;
+top:420px;
+left:120px;
+opacity:.08;
+}
+
+/* header */
+
+.header-section{
+padding:20px 5%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+}
+
+.logo-text{
+font-size:clamp(28px,5vw,48px);
+font-weight:900;
+color:#2791f5;
+line-height:1;
+}
+
+.logo-subtext{
+font-size:12px;
+letter-spacing:2px;
+color:#2D2D2D;
+}
+
+.page-number{
+font-size:14px;
+font-weight:600;
+color:#ccc;
+}
+
+/* conteúdo */
+
+.content-section{
+flex:1;
+display:flex;
+flex-direction:column;
+align-items:center;
+justify-content:center;
+padding:40px 5%;
+text-align:center;
+}
+
+/* título */
+
+.thank-you-title{
+font-size:clamp(48px,10vw,110px);
+font-weight:900;
+color:#2791f5;
+margin-bottom:35px;
+line-height:1;
+}
+
+/* linha */
+
+.divider-line{
+width:120px;
+height:5px;
+background:#0099ff;
+border-radius:3px;
+margin-bottom:35px;
+}
+
+/* info */
+
+.info-section{
+display:flex;
+flex-direction:column;
+gap:10px;
+}
+
+.presenter-name{
+font-size:clamp(24px,4vw,38px);
+font-weight:700;
+color:#2D2D2D;
+}
+
+.presenter-role{
+font-size:clamp(16px,2.5vw,22px);
+color:#666;
+}
+
+.role-highlight{
+color:#2791f5;
+font-weight:700;
+}
+
+/* detalhe central */
+
+.accent-circle{
+position:absolute;
+width:20px;
+height:20px;
+background:#2791f5;
+border-radius:50%;
+top:50%;
+left:50%;
+transform:translate(-50%,-50%);
+opacity:.2;
+}
+
+/* barra */
+
+.orange-bar{
+height:8px;
+background:#2791f5;
+width:100%;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="slide-container">
+
+<div class="geo-element-1"></div>
+<div class="geo-element-2"></div>
+<div class="geo-element-3"></div>
+<div class="geo-element-4"></div>
+<div class="geo-element-5"></div>
+
+<div class="accent-circle"></div>
+
+<!-- HEADER -->
+
+<div class="header-section">
+
+<div>
+<div class="logo-text">PAN</div>
+<div class="logo-subtext">BANCO PAN</div>
+</div>
+
+<div class="page-number">09</div>
+
+</div>
+
+<!-- CONTEÚDO -->
+
+<div class="content-section">
+
+<h1 class="thank-you-title">
+Obrigado!
+</h1>
+
+<div class="divider-line"></div>
+
+<div class="info-section">
+
+<div class="presenter-name">
+David Almeida
+</div>
+
+<div class="presenter-role">
+<span class="role-highlight">Jovem Aprendiz</span> – Banco PAN
+</div>
+
+<a href="" class="pan-button">
+    Ir para próxima página
+</a>
+<style>
+
+.pan-button{
+display:inline-block;
+background:#2791f5;
+color:#FFFFFF;
+font-family:'Montserrat', sans-serif;
+font-weight:700;
+font-size:16px;
+padding:7px 3px;
+border-radius:8px;
+text-decoration:none;
+box-shadow:0 4px 14px rgba(0, 102, 255, 0.35);
+transition:all .25s ease;
+}
+
+/* hover */
+
+.pan-button:hover{
+background:#2791f5;
+transform:translateY(-2px);
+box-shadow:0 6px 18px rgba(0, 102, 255, 0.35);
+}
+
+/* clique */
+
+.pan-button:active{
+transform:translateY(0);
+box-shadow:0 3px 8px rgba(0, 102, 255, 0.35);
+}
+
+</style>
+
+</div>
+
+</div>
+
+<div class="orange-bar"></div>
+
+</div>
+
+</body>
+
+</html>

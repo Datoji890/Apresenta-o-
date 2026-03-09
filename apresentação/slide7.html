@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>O que aprendi na prática</title>
+
+<link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+font-family:'Montserrat',sans-serif;
+background:#fff;
+}
+
+/* Container */
+
+.slide-container{
+min-height:100vh;
+display:flex;
+flex-direction:column;
+position:relative;
+overflow:hidden;
+}
+
+/* Elementos geométricos */
+
+.geo-element-1{
+position:absolute;
+width:240px;
+height:240px;
+background:#2791f5;
+border-radius:50%;
+top:-50px;
+right:-40px;
+opacity:.06;
+}
+
+.geo-element-2{
+position:absolute;
+width:100px;
+height:100px;
+background:#2791f5;
+border-radius:50%;
+bottom:80px;
+left:40px;
+opacity:.05;
+}
+
+.geo-element-3{
+position:absolute;
+width:70px;
+height:70px;
+border:2px solid #2791f5;
+border-radius:50%;
+top:250px;
+right:90px;
+opacity:.1;
+}
+
+/* Header */
+
+.header-section{
+padding:20px 5%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+border-bottom:1px solid #F0F0F0;
+}
+
+.logo-text{
+font-size:clamp(22px,4vw,32px);
+font-weight:800;
+color:#2791f5;
+}
+
+.logo-subtext{
+font-size:12px;
+letter-spacing:1px;
+color:#2D2D2D;
+}
+
+.page-number{
+font-weight:600;
+color:#999;
+}
+
+/* Conteúdo */
+
+.content-section{
+flex:1;
+padding:40px 5%;
+display:flex;
+flex-direction:column;
+}
+
+/* Título */
+
+.slide-title{
+font-size:clamp(30px,6vw,54px);
+font-weight:700;
+color:#2D2D2D;
+margin-bottom:40px;
+}
+
+/* Grid */
+
+.blocks-grid{
+display:grid;
+grid-template-columns:1fr;
+gap:24px;
+}
+
+/* Tablet/Desktop */
+
+@media(min-width:768px){
+
+.blocks-grid{
+grid-template-columns:1fr 1fr;
+}
+
+}
+
+/* Bloco */
+
+.insight-block{
+background:#FAFAFA;
+border-radius:12px;
+padding:26px 22px;
+border:2px solid #F0F0F0;
+transition:.3s;
+position:relative;
+}
+
+.insight-block:hover{
+background:#FFF5F0;
+border-color:#FFD4BA;
+transform:translateY(-4px);
+box-shadow:0 8px 20px rgba(0, 102, 255, 0.35);
+}
+
+/* detalhe canto */
+
+.insight-block::after{
+content:'';
+position:absolute;
+top:0;
+right:0;
+width:70px;
+height:70px;
+background:#2791f5;
+opacity:.05;
+border-radius:0 12px 0 100%;
+}
+
+/* Icon */
+
+.block-icon-wrapper{
+width:60px;
+height:60px;
+border-radius:10px;
+background:#fff;
+display:flex;
+align-items:center;
+justify-content:center;
+margin-bottom:16px;
+box-shadow:0 4px 10px rgba(0, 102, 255, 0.35);
+}
+
+/* Título */
+
+.block-title{
+font-size:clamp(18px,3vw,22px);
+font-weight:700;
+color:#2D2D2D;
+margin-bottom:8px;
+}
+
+/* Texto */
+
+.block-description{
+font-size:15px;
+color:#666;
+line-height:1.5;
+}
+
+/* Footer */
+
+.footer-section{
+padding:20px 5%;
+display:flex;
+flex-direction:column;
+gap:6px;
+align-items:flex-start;
+}
+
+@media(min-width:768px){
+
+.footer-section{
+flex-direction:row;
+justify-content:space-between;
+align-items:center;
+}
+
+}
+
+.footer-text{
+font-size:14px;
+font-weight:600;
+color:#666;
+}
+
+.footer-highlight{
+color:#2791f5;
+}
+
+/* Barra inferior */
+
+.orange-bar{
+height:6px;
+background:#2791f5;
+width:100%;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="slide-container">
+
+<div class="geo-element-1"></div>
+<div class="geo-element-2"></div>
+<div class="geo-element-3"></div>
+
+<!-- HEADER -->
+
+<div class="header-section">
+
+<div>
+<div class="logo-text">PAN</div>
+<div class="logo-subtext">BANCO PAN</div>
+</div>
+
+<div class="page-number">07</div>
+
+</div>
+
+<!-- CONTEÚDO -->
+
+<div class="content-section">
+
+<h1 class="slide-title">
+O que aprendi na prática
+</h1>
+
+<div class="blocks-grid">
+
+<div class="insight-block">
+
+<div class="block-icon-wrapper">💻</div>
+
+<div class="block-title">
+Melhor organização de código
+</div>
+
+<div class="block-description">
+Aprendi a estruturar e organizar o código de forma clara e eficiente, facilitando manutenção e leitura.
+</div>
+
+</div>
+
+<div class="insight-block">
+
+<div class="block-icon-wrapper">🧩</div>
+
+<div class="block-title">
+Como criar interfaces simples
+</div>
+
+<div class="block-description">
+Desenvolvi habilidades para criar interfaces limpas, intuitivas e fáceis de usar.
+</div>
+
+</div>
+
+<div class="insight-block">
+
+<div class="block-icon-wrapper">🎨</div>
+
+<div class="block-title">
+Melhorar aparência das páginas
+</div>
+
+<div class="block-description">
+Aprendi técnicas de estilização para deixar páginas mais atraentes e profissionais.
+</div>
+
+</div>
+
+<div class="insight-block">
+
+<div class="block-icon-wrapper">⭐</div>
+
+<div class="block-title">
+Testes e visualização de páginas em navegadores
+</div>
+
+<div class="block-description">
+verificar se o site funciona corretamente e se o layout aparece da forma esperada para o usuário.
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- FOOTER -->
+
+<div class="footer-section">
+
+<div class="footer-text">
+<span class="footer-highlight">Jovem Aprendiz</span> – Banco PAN
+</div>
+
+<a href="slide8.html" class="pan-button">
+    Ir para próxima página
+</a>
+<style>
+
+.pan-button{
+display:inline-block;
+background:#2791f5;
+color:#FFFFFF;
+font-family:'Montserrat', sans-serif;
+font-weight:700;
+font-size:16px;
+padding:7px 3px;
+border-radius:8px;
+text-decoration:none;
+box-shadow:0 4px 14px rgba(0, 102, 255, 0.35);
+transition:all .25s ease;
+}
+
+/* hover */
+
+.pan-button:hover{
+background:#2791f5;
+transform:translateY(-2px);
+box-shadow:0 6px 18px rgba(0, 102, 255, 0.35);
+}
+
+/* clique */
+
+.pan-button:active{
+transform:translateY(0);
+box-shadow:0 3px 8px rgba(0, 102, 255, 0.35);
+}
+
+</style>
+
+<div class="footer-text">
+David Almeida
+</div>
+
+</div>
+
+<div class="orange-bar"></div>
+
+</div>
+
+</body>
+</html>
